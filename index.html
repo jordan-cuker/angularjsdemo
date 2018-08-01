@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="angularjsDemo">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="view port" content="width=device.width,initial-scale=1">
@@ -18,10 +18,11 @@
         <!-- Our application scripts -->
         <script src="../app/app.js"></script>
         <script src="../app/controllers/list.controller.js"></script>
+        <script src="../app/services/dataLoader.factory.js"></script>
     </head>
 
     <!-- TODO learn about data bindings -->
-    <body>
+    <body ng-app="angularjsDemo">
         <custom-html-tag></custom-html-tag>
         <another-html-tag></another-html-tag>
     </body>
