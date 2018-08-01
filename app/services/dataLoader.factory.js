@@ -93,22 +93,26 @@ angular.module('angularjsDemo')
 
     var factory = {};
 
-    var getConceptByTitle = function(strTitle) {
+    var getConceptByTitle = function (strTitle) {
       if(strTitle == null){
+        console.log('Returning NULL');
         return null;
       }
+      var foundElement = null;
+      
       conceptData.forEach(function(element){
         if (strTitle.toLowerCase() == element.title.toLowerCase()){
-          return element;
+          console.log('Found elem:', element);
+          foundElement = element
         }
       })
-      return null;
+      return foundElement;
     };
 
     // commenting out the below line will not expose the getConceptByTitle function as it is not part of the returned object
     factory.getConceptByTitle = getConceptByTitle;
 
     factory.data = conceptData;
-    
+    console.log(factory);
     return factory;
 });

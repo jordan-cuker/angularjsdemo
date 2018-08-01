@@ -4,12 +4,8 @@
 (function (){
     angular.module('angularjsDemo')
     .controller("listController", function ($scope, dataLoaderFactory){
-        $scope.customer = {
-            name: "asd",
-            address: "asasa"
-        };
-        
-        $scope.data = dataLoaderFactory.getConceptByTitle("Template");
+        $scope.trying = dataLoaderFactory.getConceptByTitle("directives").title;
+        $scope.data = dataLoaderFactory.data;
     })
     .directive("customHtmlTag", function() {
         return {

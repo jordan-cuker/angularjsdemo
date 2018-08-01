@@ -1,5 +1,10 @@
 <div ng-controller="listController">
-    Name: {{customer.name}} Address: {{customer.address}}
+    {{trying}}
     <hr>
-    {{data}}
+    <div ng-repeat="concept in data">
+        <h1>{{concept.title}}</h1>
+        <h2>{{concept.description}}</h2>
+        <h3>{{concept.link_url}}</h3>
+    </div>
+
 </div>
