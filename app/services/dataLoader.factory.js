@@ -93,7 +93,7 @@ angular.module('angularjsDemo')
 
     var factory = {};
 
-    factory.getConceptByTitle = function(strTitle) {
+    var getConceptByTitle = function(strTitle) {
       if(strTitle == null){
         return null;
       }
@@ -104,6 +104,9 @@ angular.module('angularjsDemo')
       })
       return null;
     };
+
+    // commenting out the below line will not expose the getConceptByTitle function as it is not part of the returned object
+    factory.getConceptByTitle = getConceptByTitle;
 
     factory.data = conceptData;
     
