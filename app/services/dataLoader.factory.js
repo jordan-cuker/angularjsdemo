@@ -113,6 +113,6 @@ angular.module('angularjsDemo')
     factory.getConceptByTitle = getConceptByTitle;
 
     factory.data = conceptData;
-    console.log(factory);
+    //console.log(factory);
     return factory;
 });
