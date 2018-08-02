@@ -1,9 +1,11 @@
 .card {
     margin:40px auto;
     width:600px;
-    max-height: 400px;
+    height:300px;
     background:#d6dbd9;
 }
+
+
 
 .card-modal{
     width:70%;
@@ -21,4 +23,8 @@
     position: absolute;
     bottom:0;
     right:0;
+}
+
+.row{
+    margin:0;
 }

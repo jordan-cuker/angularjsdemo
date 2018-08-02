@@ -1,3 +1,3 @@
 (function (){
-    angular.module('angularjsDemo', []);
+    angular.module('angularjsDemo', ['ngSanitize']);
 })();
