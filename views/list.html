@@ -1,10 +1,11 @@
 <div ng-controller="listController">
-    {{trying}}
-    <hr>
-    <div ng-repeat="concept in data">
-        <h1>{{concept.title}}</h1>
-        <h2>{{concept.description}}</h2>
-        <h3>{{concept.link_url}}</h3>
+    <div ng-repeat="concept in data" class="card">
+        <div class="card-body" >
+            <div class="card-title">{{concept.title}}</div>
+            <h2>{{concept.description}}</h2>
+            <a href="{{concept.link_url}}">Learn More<a>
+        </div>
+        
     </div>
 
 </div>
