@@ -1,0 +1,24 @@
+.card {
+    margin:40px auto;
+    width:600px;
+    max-height: 400px;
+    background:#d6dbd9;
+}
+
+.card-modal{
+    width:70%;
+    max-height:auto;
+
+}
+
+.concept-modal
+{
+    margin-top: 40px
+}
+
+.modal-btn
+{
+    position: absolute;
+    bottom:0;
+    right:0;
+}

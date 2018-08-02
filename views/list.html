@@ -1,12 +1,22 @@
 <div ng-controller="listController" ng-hide="shouldHideList()">
-    <div ng-repeat="concept in data" class="card" style="margin:40px auto;width:700px;background:#d6dbd9;">
-        <div class="card-body">
-            <div class="card-title"><h1>{{concept.title}}</h1></div>
-            <hr>
-            <p>{{concept.description}}</p>
-            <button class="btn btn-primary" ng-click="toggleModal(concept)">Learn More</button>
+
+    <div class="row">
+        <div class="col-sm-6" ng-repeat="concept in data">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                                <div class="card-title"><h1>{{concept.title}}</h1></div>
+                                <hr>
+                                <p>{{concept.description}}</p>
+                                <button class="btn btn-primary" ng-click="toggleModal(concept)">Learn More</button>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+
         </div>
-        
+   
     </div>
 
 </div>
