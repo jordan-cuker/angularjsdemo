@@ -1,6 +1,7 @@
 (function(){
     angular.module("angularjsDemo")
         .controller("modalController", function($scope, modalService){
+            
             $scope.shouldHideModal = function (){
                 return !modalService.modalActive;
             }

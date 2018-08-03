@@ -1,19 +1,11 @@
 <div ng-controller="modalController" ng-hide="shouldHideModal()" class="concept-modal" >
-   
     <div class="row">
-        <div class="card card-modal">
-                <div class="col-md-10">
-                        
-                        <h1>{{getData().title}}</h1>
-                        <h5>{{getData().description}}</h5>
-                        
-                        <input type="text" ng-data=""/>
-                        
-                </div>
-                 <button class="btn btn-primary modal-btn"  ng-click="toggleModal()">Back</button>
+        <div>
+            <div class="col-md-10 modal-content">
+                <h1>{{getData().title}}</h1>
+                <h5>{{getData().description}}</h5>
+                <button class="btn btn-primary modal-btn"  ng-click="toggleModal()">Back</button>
+            </div>
         </div>
-        
     </div>
-
 </div>
-

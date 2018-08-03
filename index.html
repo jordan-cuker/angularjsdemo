@@ -17,17 +17,21 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
         crossorigin="anonymous"></script>
 
+    </head>
+
+    <body ng-app="angularjsDemo" style="background:#9ba39f;">
+        
+        <custom-html-tag></custom-html-tag>
+        <learn-more></learn-more>
+        <custom-modal></custom-modal>
+
         <!-- Our application scripts -->
         <script src="../app/app.js"></script>
         <script src="../app/controllers/list.controller.js"></script>
         <script src="../app/controllers/modal.controller.js"></script>
+        <script src="../app/controllers/learn-more.controller.js"></script>
         <script src="../app/services/dataLoader.factory.js"></script>
         <script src="../app/services/modal.service.js"></script>
-    </head>
-
-    <!-- TODO learn about data bindings -->
-    <body ng-app="angularjsDemo" style="background:#9ba39f;">
-        <custom-html-tag></custom-html-tag>
-        <custom-modal></custom-modal>
+        <script src="../app/services/learn-more.service.js"></script>
     </body>
 </html>

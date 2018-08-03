@@ -1,0 +1,11 @@
+<div ng-controller="learnmoreController" ng-hide="shouldHideMore()" class="concept-modal" >
+    <div class="row">
+        <div class="card card-modal">
+            <div class="col-md-10">
+                <h1>{{getData().title}}</h1>
+                <h5>{{getData().description}}</h5>
+            </div>
+            <button class="btn btn-primary learnmore-btn"  ng-click="toggleMore()">Back</button>
+        </div>
+    </div>
+</div>

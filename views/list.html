@@ -8,18 +8,15 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
-                                <div class="card-title"><h1>{{concept.title}}</h1></div>
-                                <hr>
-                                <p>{{concept.description}}</p>
-                                
+                            <div class="card-title"><h1>{{concept.title}}</h1></div>
+                            <hr>
+                            <p>{{concept.description}}</p>
                         </div>
-                        <button class="btn btn-primary modal-btn" ng-click="toggleModal(concept)">Learn More</button>
+                        <button class="btn btn-primary right" ng-click="toggleMore(concept)">Learn More</button>
+                        <button class="btn btn-primary left" ng-click="toggleModal(concept)">Toggle Modal</button>
                     </div>         
                 </div>
             </div>
-
         </div>
-
     </div>
-
 </div>

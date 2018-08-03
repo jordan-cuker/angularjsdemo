@@ -3,12 +3,11 @@
  */
 (function (){
     angular.module('angularjsDemo')
-    .controller("listController", ['$scope', 'dataLoaderFactory', 'modalService', function ($scope, dataLoaderFactory, modalService){
+    .controller("listController", ['$scope', 'dataLoaderFactory', 'modalService', 'learnmoreService', function ($scope, dataLoaderFactory, modalService, learnmoreService){
         $scope.data = dataLoaderFactory.data;
 
         // function must be attached to the scope to be available for ng-click
         $scope.toggleModal = function (objConcept){
-            console.log("clicked");
             if(objConcept == null){
                 console.log("objConcept was null.");
                 return;
@@ -17,8 +16,17 @@
             modalService.toggleModal(objConcept);
         }
 
+        $scope.toggleMore = function(objConcept){
+            if(objConcept == null){
+                console.log("objConcept was null.");
+                return;
+            }
+
+            learnmoreService.toggleMore(objConcept);
+        }
+
         $scope.shouldHideList = function (){
-            return modalService.modalActive;
+            return learnmoreService.pageActive;
         }
     }])
     .directive("customHtmlTag", function() {
