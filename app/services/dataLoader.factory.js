@@ -3,6 +3,7 @@
   Ex: for ".factory('factoryName', NameOfFunctionPassed)" the value of NameOfFunctionPassed will be exposed.
 */
 
+// The below would be more suited twords a service, but for the sake of explaination we used a factory
 angular.module('angularjsDemo')
   .factory('dataLoaderFactory', function() {
     var conceptData = [
@@ -113,6 +114,6 @@ angular.module('angularjsDemo')
     factory.getConceptByTitle = getConceptByTitle;
 
     factory.data = conceptData;
-    //console.log(factory);
+
     return factory;
 });

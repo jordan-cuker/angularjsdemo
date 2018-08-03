@@ -1,23 +1,23 @@
-<div ng-controller="listController" ng-hide="shouldHideList()">
-    <div class="row header">
+<div ng-controller="listController">
+    <div class="row header" ng-hide="shouldHideList()">
         <h1>AngularJS Concepts</h1>
     </div>
     <div class="row">
         <div class="col-sm-6" ng-repeat="concept in data">
-            <div class="row">
+            <div class="row" ng-hide="shouldHideList()">
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title"><h1>{{concept.title}}</h1></div>
                             <hr>
                             <p>{{concept.description}}</p>
-                            <learn-more-controller concept="concept.title"></learn-more-controller>
                         </div>
                         <button class="btn btn-primary right" ng-click="toggleMore(concept)">Learn More</button>
                         <button class="btn btn-primary left" ng-click="toggleModal(concept)">Toggle Modal</button>
                     </div>         
                 </div>
             </div>
+            <learn-more-controller concept="concept.title"></learn-more-controller>
         </div>
     </div>
 </div>

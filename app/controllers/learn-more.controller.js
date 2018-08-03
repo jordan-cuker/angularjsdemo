@@ -1,34 +1,8 @@
-// angular.module("angularjsDemo")
-//     .component("learnMoreController", {
-//         controller: ($scope, learnmoreService) => {
-//             $scope.shouldHideMore = function () {
-//                 return !learnmoreService.pageActive;
-//             }
-//             $scope.toggleMore = function(){
-//                 return learnmoreService.toggleMore(null);
-//             }
-//             $scope.getData = function(){
-//                 return learnmoreService.conceptData;
-//             }
-//             this.$onInit = function(){
-//                 console.log("this init");
-//             }
-//             $scope.getTemplateUrl = function(){
-//                 //.console.log($scope.$ctrl);
-//                 //return "../../views/" + $scope.conceptTitle + ".html";
-//             }
-//         },
-//         bindings: {
-//             concept: '='
-//         },
-//         template: `<ng-include src="getTemplateUrl()"/>`
-//     })
-
 angular.module("angularjsDemo")
     .controller("learnmoreController", function($scope, learnmoreService){
 
         $scope.shouldHideMore = function (){
-            return !learnmoreService.pageActive;
+            return learnmoreService.pageActive;
         }
         $scope.toggleMore = function(){
             return learnmoreService.toggleMore(null);
