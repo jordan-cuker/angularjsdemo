@@ -28,3 +28,38 @@
 .row{
     margin:0;
 }
+
+.btn-primary{
+    background-color: #e62739!important;
+    border-color: #e62739!important;
+    
+}
+
+.btn-primary:hover{
+    background-color: #ff6c7a!important;
+    border-color: #e62739!important;
+    
+}
+
+.btn-primary:focus{
+    background-color: #ff6c7a!important;
+    border-color: #e62739 !important;
+    
+}
+
+.btn-primary:active{
+    background-color: #e62739!important;
+    box-shadow: 0 5px #666 !important;
+    transform: translateY(4px);
+
+}
+
+.header {
+    background: #efefef;
+    
+}
+
+.header h1 {
+    color:#e62739;
+    margin-left: 20px;
+}

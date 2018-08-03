@@ -10,6 +10,7 @@
             $scope.getData = function(){
                 return modalService.conceptData;
             }
+
         })
         .directive("customModal", function(){
             return{
@@ -17,4 +18,6 @@
                 templateUrl: "../../views/modal.html"
             }
         })
+
+        
 })();
