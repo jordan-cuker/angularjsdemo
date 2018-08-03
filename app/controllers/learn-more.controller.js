@@ -48,7 +48,7 @@ angular.module("angularjsDemo")
                 // function used on the ng-include to resolve the template
                 $scope.getTemplateUrl = function() {
                     //console.log($scope.concept);
-                    return "../../views/" + $scope.concept + ".html";
+                    return "../../views/" + String($scope.concept).replace(/\s/g,'') + ".html";
                 }
               }
         }
