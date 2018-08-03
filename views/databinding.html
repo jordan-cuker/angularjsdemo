@@ -1,0 +1,57 @@
+<div class="dbContent" ng-hide="shouldHideMore()">
+    <div class="onewayB">
+
+        <h1>One Way Data Binding &#60; </h1>
+        <p>In one way data binding, view not updates automatically when data model changed
+            and we need to write custom code to make it updated everytime. its not a synchronization process
+            and it will process data in one way which is below mentioned in figure.</p>
+        <img src="https://qph.fs.quoracdn.net/main-qimg-382ecffc070f87277652c02151bb9427.webp"/>
+        <br>
+        <div class='exampleCard'>
+            <h3>Example: </h3>
+            <div class="exampleContent">    
+                <input type="text" placeholder="VAl" />
+
+                <label>Variable value is ?</label>
+                <button class="btn btn-primary" ng-click="">Increment Value</button>
+            </div>
+
+            <div class="exampleDesc">
+                <p>If you try to edit the variable value using the text box, you can see this doesn't work . The reason behind this is the
+                    data is binded one way and does not registers the changes made in the view. 
+                    <br><br><br>
+                    Now if you try the 'Increment Value' button, you can see the variable changing since this is a 
+                    coded function inside the javascript code.
+                </p>
+            </div>
+                
+        </div>
+        
+
+    </div>
+
+    <div class="twowayB">
+        <h1>Two Ways Data Binding =</h1>
+        <p>In Two-way data binding, view (UI part) updates automatically when data model changed.
+             Its synchronization processes and two way data binding that mentioned in below figure.</p>
+        <img src="https://qph.fs.quoracdn.net/main-qimg-4246da4fe94a89d4c8299f5bb24116e2.webp"/>
+        <br>
+        <div class='exampleCard'>
+                <h3>Example: </h3>
+                <div class="exampleContent">    
+                    <input type="text" placeholder="VAl" />
+                    <label>Variable value is ?</label>
+                    <button class="btn btn-primary" ng-click="">Increment Value</button>
+                </div>
+    
+                <div class="exampleDesc">
+                    <p>The clear differrence here is that you can change the 
+                        value of the variable from the view as well as use a coded button.
+                    </p>
+                </div>
+                    
+            </div>
+    </div>
+</div>
+
+
