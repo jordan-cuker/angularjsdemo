@@ -5,6 +5,7 @@
     angular.module('angularjsDemo')
     .controller("listController", ['$scope', 'dataLoaderFactory', 'modalService', 'learnmoreService', function ($scope, dataLoaderFactory, modalService, learnmoreService){
         $scope.data = dataLoaderFactory.data;
+        $scope.search = "";
 
         // function must be attached to the scope to be available for ng-click
         $scope.toggleModal = function (objConcept){

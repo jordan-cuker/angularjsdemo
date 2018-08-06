@@ -1,9 +1,15 @@
 <div ng-controller="listController">
+    
+
     <div class="row header" ng-hide="shouldHideList()">
         <h1>AngularJS Concepts</h1>
     </div>
+    <form class="myform" ng-hide="shouldHideList()">
+            <input 
+                type="text" placeholder="Search..." class="form-control" ng-model="data.search">
+    </form>
     <div class="row">
-        <div class="col-sm-6" ng-repeat="concept in data">
+        <div class="col-sm-6" ng-repeat="concept in data |  filter: data.search">
             <div class="row" ng-hide="shouldHideList()">
                 <div class="col-md-6">
                     <div class="card">
